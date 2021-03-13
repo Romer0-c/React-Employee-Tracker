@@ -9,3 +9,7 @@
     height: 100%;
   }
   
+  .employeeList {
+    display:flex;
+    flex-wrap: wrap;
+  }
