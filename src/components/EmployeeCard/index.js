@@ -4,10 +4,10 @@ import "./style.css";
 function EmployeeCard({employee}) {
   return (
     <div className="card">
-      <div className="img-container">
+      <div className="img-container rounded">
         <img
-          alt="SpongeBob"
-          src={employee.picture.medium} 
+          alt="Employee"
+          src={employee.picture.large} 
         />
       </div>
       <div className="content">
@@ -22,7 +22,7 @@ function EmployeeCard({employee}) {
             <strong>Email:</strong> {employee.email}
           </li>
           <li>
-            <strong>Location:</strong> {employee.location.city}, {employee.location.state} {employee.location.country}
+            <strong>Location:</strong> {employee.location.city}, {employee.location.state}
           </li>
         </ul>
       </div>
